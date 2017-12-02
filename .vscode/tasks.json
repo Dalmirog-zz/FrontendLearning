@@ -6,10 +6,10 @@
         {
             "label": "Typescript yo",
             "type": "typescript",
-            "tsconfig": "app\\tsconfig.json",
+            "tsconfig": "multimath\\app\\tsconfig.json",
             "problemMatcher": [
                 "$tsc"
-            ]            
+            ]
         }
     ]
 }
