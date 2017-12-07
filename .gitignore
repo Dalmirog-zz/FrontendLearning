@@ -3,3 +3,4 @@ multimath/node_modules/*
 multimath/js/**/*
 multimath/*.js
 multimath/**/*.map
+**/*.log

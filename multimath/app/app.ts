@@ -1,5 +1,7 @@
+/// <reference path="player.ts"/>
+
 function startGame(){
-    // Starting a new game
+    // Starting a new gamee
 
     let playerName: string | undefined = getInputValue('playername');    
     logPlayer(playerName);
@@ -29,16 +31,6 @@ function postSCore(score: number, playerName: string = 'MultiMath Player'): void
 
 }
 
-function getInputValue(elementID: string): string | undefined {
-    let inputElement: HTMLInputElement = <HTMLInputElement>document.getElementById(elementID)
-
-    if  (inputElement.value === ''){
-        return undefined;
-    }
-    else{
-        return inputElement.value;
-    }
-}
 document.getElementById('startGame')!.addEventListener('click',startGame);
 
 let logMessage = (message: string) => console.log(message);
@@ -46,3 +38,7 @@ let logMessage = (message: string) => console.log(message);
 function logError(error: string): void {
     console.error(error);
 }
+
+let firstPlayer: Player = new Player();
+firstPlayer.name = 'Lanier';
+console.log(firstPlayer.formatName());
