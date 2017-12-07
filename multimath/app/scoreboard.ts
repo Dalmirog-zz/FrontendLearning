@@ -1,6 +1,6 @@
-/// <reference path="result.ts" />
+import {Result}from './result'; 
 
-class Scoreboard{
+export class Scoreboard{
         private results: Result[ ] = [ ];
         
         addResult(newResult: Result): void {
@@ -13,7 +13,7 @@ class Scoreboard{
                 for(let index = 0; index <this.results.length; index++){
                         let result: Result = this.results[index];
                         output += '<h4>';
-                        output += result.playerName + ': ' + result.score + '/' + result.problemCount + 'something';
+                        output += result.playerName + ': ' + result.score + '/' + result.problemCount + 'for factor' + result.factor ;
                         output += '</h4>';
 
                 }
